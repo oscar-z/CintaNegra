@@ -38,7 +38,7 @@ export default function HeaderLinks(props) {
           buttonIcon={Apps}
           dropdownList={[
             <Link to="/" className={classes.dropdownLink}>
-              Dueno
+              Dueño
             </Link>,
             <a
               href="/"
