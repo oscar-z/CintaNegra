@@ -1,5 +1,6 @@
 import React from "react";
 // @material-ui/core components
+import classNames from "classnames";
 import { makeStyles } from "@material-ui/core/styles";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import Icon from "@material-ui/core/Icon";
@@ -22,8 +23,14 @@ import CustomInput from "../../components/CustomInput/CustomInput.js";
 import styles from "../../assets/jss/material-kit-react/views/loginPage.js";
 
 import image from "../../assets/img/condo1.jpg";
+import team2 from "../../assets/img/faces/vector1.jpg";
 
 const useStyles = makeStyles(styles);
+// const imageClasses = classNames(
+//   classes.imgRaised,
+//   classes.imgRoundedCircle,
+//   classes.imgFluid
+// );
 
 export default function LoginPage(props) {
   const [cardAnimaton, setCardAnimation] = React.useState("cardHidden");
@@ -59,30 +66,12 @@ export default function LoginPage(props) {
                     <div className={classes.socialLine}>
                       <Button
                         justIcon
-                        href="#pablo"
+                        href="#"
                         target="_blank"
                         color="transparent"
-                        onClick={e => e.preventDefault()}
-                      >
-                        <i className={"fab fa-twitter"} />
-                      </Button>
-                      <Button
-                        justIcon
-                        href="#pablo"
-                        target="_blank"
-                        color="transparent"
-                        onClick={e => e.preventDefault()}
-                      >
-                        <i className={"fab fa-facebook"} />
-                      </Button>
-                      <Button
-                        justIcon
-                        href="#pablo"
-                        target="_blank"
-                        color="transparent"
-                        onClick={e => e.preventDefault()}
-                      >
-                        <i className={"fab fa-google-plus-g"} />
+                        onClick={e => e.preventDefault()}>
+                        {/* <i className={"fab fa-twitter"} /> */}
+                        <img src={team2} alt="..." width="50px" height="50px" />
                       </Button>
                     </div>
                   </CardHeader>

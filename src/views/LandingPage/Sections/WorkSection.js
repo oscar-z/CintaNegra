@@ -36,6 +36,7 @@ export default function WorkSection() {
                   formControlProps={{
                     fullWidth: true
                   }}
+
                 />
               </GridItem>
               <GridItem xs={12} sm={12} md={6}>
